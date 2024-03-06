@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<style>
+    fieldset {
+        border: 3px solid dodgerblue;
+    }
+
+    body {
+        background: linear-gradient(to right, rgb(0, 104, 240), rgb(132, 0, 255), rgb(204, 0, 255));
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating label {
+        padding: .375rem .75rem;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #495057;
+        transition: all .1s ease-in-out;
+    }
+
+    .form-floating textarea {
+        height: calc(3.5rem + 2px);
+        width: 100%;
+        resize: none;
+        /* Para evitar que o usuário redimensione o textarea */
+    }
+
+    .form-control:focus~label,
+    .form-control:not(:placeholder-shown)~label {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 0.85rem;
+        color: #495057;
+        transform: translate(0, -1.5rem) scale(0.85);
+    }
+
+    #floatingTextarea2{
+        height: 100px;
+    }
+
+    .box{
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+    }
+
+    legend{
+        text-align: center;
+        padding: 10px;
+        border: 1px solid dodgerblue;
+        border-radius: 5px;
+    }
+
+    .inputBox{
+        position: relative;
+    }
+
+    .inputUser{
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+</style>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário de cadastro</b></legend>
+                <main>
+                    <section>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <label for="nome">Nome Completo</label>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" class="inputUser" required>
+                            <label for="email">Seu email</label>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            <label for="telefone">Seu telefone</label>
+                        </div>
+
+                        <br>
+
+                        <p>Sexo</p>
+                        <input type="radio" name="genero" id="feminino" value="feminino" class="inputUser" required>
+                        <label for="feminino">Feminino</label>
+
+                        <input type="radio" name="genero" id="masculino" value="masculino" class="inputUser" required>
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" name="genero" id="outro" value="outro" class="inputUser" required>
+                        <label for="outro">Outro</label>
+
+                        <br>
+                        <br>
+
+                        <div class="inputBox">
+                            <label for="data_nascimento"><b>Data de nascimento</b></label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <h4><b>Endereço</b></h4>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="estado" id="estado" class="inputUser" required>
+                            <label for="estado">Estado</label>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                            <label for="cidade">Cidade</label>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="text" name="assunto" id="assunto" class="inputUser" required>
+                            <label for="assunto">Assunto</label>
+                        </div>
+
+                        <br>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" id="floatingTextarea2"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                        <button type="submit">Enviar</button>
+                        </div>
+
+                    </section>
+                </main>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
