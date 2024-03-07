@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagens</title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-... (hash do integrity)" crossorigin="anonymous">
+    </head>
+    
+</head>
+
+<body>
+
+
+    <!-- Galeria de Imagens
+Objetivo: Desenvolver uma página que apresente uma galeria de imagens com descrições.
+
+Instruções:
+
+Utilize a tag <main> para o conteúdo principal.
+Dentro de <main>, use <section> para a galeria de imagens.
+Empregue <figure> para cada imagem na galeria e <figcaption> para adicionar uma descrição a cada uma.
+Organize as imagens e descrições usando as classes de grid do Bootstrap para um layout responsivo.
+Garanta que cada <figure> esteja dentro de uma div com classes de coluna do Bootstrap para alinhar as imagens em uma grade responsiva. -->
+
+    <style>
+        @import url('https://use.fontawesome.com/release/v6.4.2/css/all.css');
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: relative;
+            width: 800px;
+            height: 480px;
+            background: #f5f5f5;
+            box-shadow: 0 30px 50px #dbdbdb;
+        }
+
+        .container .slide .item{
+            width: 165px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+
+    <div class="container">
+        <div class="slide">
+            <div class="item"
+                style="background-image: url(https://i0.wp.com/mirelletome.com/wp-content/uploads/2017/06/IMG_6048-1024x683-SUICA.jpg?fit=1024%2C683&ssl=1);">
+                <div class="conteudo">
+                    <div class="nome">Montanhas Suiças</div>
+                    <div class="descricao">Montanhas da Suiça, são lindas!</div>
+                    <button>Ver nais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slide">
+            <div class="item"
+                style="background-image: url(https://portaldeinverno.com.br/wp-content/uploads/2015/01/alpes-japao-1.jpg);">
+                <div class="conteudo">
+                    <div class="nome">Montanhas Japão</div>
+                    <div class="descricao">Montnhas linda do Japão!</div>
+                    <button>Ver nais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slide">
+            <div class="item"
+                style="background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/08/cordilheira-andes.jpg);">
+                <div class="conteudo">
+                    <div class="nome">Montanha da América do Sul</div>
+                    <div class="descricao">Cordilheira dos aNDES</div>
+                    <button>Ver nais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="botao">
+        <button class="anterior"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="proxima"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    
+
+
+
+</body>
+
+</html>
