@@ -10,65 +10,120 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #BD09B6;
+
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: yellow;
+            color: black;
+            padding: 20px;
             text-align: center;
-            padding: 10px 0;
         }
 
-        .about,
-        .team {
-            width: 80%;
-            margin: 10px auto;
+        header h1 {
+            margin: 0;
         }
 
-        .about h1,
-        .team h1 {
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .info h1 {
             color: #333;
             text-align: center;
+            margin-top: 0;
         }
 
-        .team-members {
+        .info p {
+            color: #666;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .time {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .time h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .time-membros {
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
 
-        .team-member {
+        .time-membro {
             text-align: center;
-            margin: 10px;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .team-member img {
+        .time-membro img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-bottom: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
             transition: transform 0.3s ease;
         }
 
-        .team-member img:hover {
+        .time-membro p {
+            color: #666;
+        }
+
+        .time-membro h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .time-membro:hover img {
             transform: scale(1.1);
         }
 
-        .about p {
-            font-size: 18px;
-            text-align: center;
-        }
-
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: yellow;
+            color: black;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -76,39 +131,56 @@
 <body>
 
     <header>
-        <h1>Sobre Nós</h1>
+        <h1>Hobbies Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Servico.html">Serviços</a></li>
+                <li><a href="Sobre_nos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="about">
-        <h1>Quem Somos</h1>
-        <p>Somos estudantes do NovoTec e desenvolvemos o projeto HobbiesHub</p>
-        <!-- <p>Otávio é um típico rapaz apaixonado por programação que sempre visa criar e desenvolver coisas novas.</p>
-        <p>Giovanna já é uma garota apaixonada por Marketing que busca sempre criar o melhor e estar atenta ao mercado.</p> -->
-    </section>
+    <div class="container">
+        <div class="info">
+            <h1>Quem Somos</h1>
+            <p>Somos estudantes do NovoTec e desenvolvemos o projeto HobbiesHub</p>
+        </div>
 
-    <br>
-
-    <section class="team">
-        <h1>Nossa Equipe</h1>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="../Imagens/me.jpg" class="imagem_equipe" alt="Membro da Equipe">
-                <h3>Otávio Monteiro</h3>
-                <p>Desenvolvedor full-stack do</p>
-                <p>projeto HobbiesHub</p>
-            </div>
-            <div class="team-member">
-                <img src="../Imagens/gi.jpg" class="imagem_equipe" alt="Membro da Equipe">
-                <h3>Giovanna Mayumi</h3>
-                <p>Desenvolvedora do</p>
-                <p>protótipo HobbiesHub</p>
+        <div class="time">
+            <h1>Nossa Equipe</h1>
+            <div class="time-membros">
+                <div class="time-membro">
+                    <img src="../Imagens/me.jpg" class="imagem_equipe" alt="Membro da Equipe">
+                    <h3>Otávio Monteiro</h3>
+                    <p>Desenvolvedor full-stack do projeto HobbiesHub</p>
+                </div>
+                <div class="time-membro">
+                    <img src="../Imagens/gi.jpg" class="imagem_equipe" alt="Membro da Equipe">
+                    <h3>Giovanna Mayumi</h3>
+                    <p>Desenvolvedora do protótipo HobbiesHub</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 1014 Sobre Nós. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Hobbies Hub. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        // Adiciona classe "active" ao link da aba selecionada
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav ul li a");
+            const currentLocation = location.href;
+
+            links.forEach(link => {
+                if (link.href === currentLocation) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
