@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postagem de Blog</title>
+  <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #BD09B6;
+    }
+
+    .container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    article {
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #BD09B6;
+    }
+
+    p {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    aside {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #BD09B6;
+    }
+
+    label {
+      color: #333;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background-color: #BD09B6;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #9A0B97;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <article>
+    <h1>Título do Post</h1>
+    <p>Data: 27 de março de 2024</p>
+    <p>Autor: Nome do Autor</p>
+    <section>
+      <p>Conteúdo do Post.</p>
+    </section>
+  </article>
+
+  <aside class="mt-5">
+    <h2>Comentários</h2>
+    <form>
+      <div class="form-group">
+        <label for="nomeUsuario">Nome:</label>
+        <input type="text" class="form-control" id="nomeUsuario" placeholder="Digite seu nome">
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentário:</label>
+        <textarea class="form-control" id="comentario" rows="3" placeholder="Digite seu comentário"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Comentário</button>
+    </form>
+  </aside>
+</div>
+
+<!-- Adicione os links para os arquivos JavaScript do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
